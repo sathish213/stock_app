@@ -10,7 +10,7 @@ public class StockInformation {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String name;
-    private double prise;
+    private double price;
     private int quantity;
     private String type;
     @Column(name = "created_on")
@@ -32,12 +32,12 @@ public class StockInformation {
         this.name = name;
     }
 
-    public double getPrise() {
-        return prise;
+    public double getPrice() {
+        return price;
     }
 
-    public void setPrise(double prise) {
-        this.prise = prise;
+    public void setPrice(double price) {
+        this.price = price;
     }
 
     public int getQuantity() {
